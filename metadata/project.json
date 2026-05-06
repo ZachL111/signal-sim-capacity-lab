@@ -1,0 +1,32 @@
+{
+  "index": 342,
+  "phase": 2,
+  "batch": 38,
+  "name": "signal-sim-capacity-lab",
+  "planned_name": "signal-sim-capacity-lab",
+  "language": "C#",
+  "category": "Simulations",
+  "goal": "Create a C# reference implementation for capacity workflows, centered on constraint solving, bounded scenario files, and conflict explanations.",
+  "repository_url": "https://github.com/ZachL111/signal-sim-capacity-lab",
+  "verification_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/verify.ps1",
+  "model": {
+    "inputs": [
+      "demand",
+      "capacity",
+      "latency",
+      "risk",
+      "weight"
+    ],
+    "threshold": 168,
+    "risk_penalty": 4,
+    "latency_penalty": 3,
+    "weight_bonus": 2,
+    "decision_rule": "accept when score is greater than or equal to threshold, otherwise review"
+  },
+  "quality_gates": [
+    "readme constraint scan",
+    "fixture presence check",
+    "metadata JSON parse",
+    "language verifier"
+  ]
+}
