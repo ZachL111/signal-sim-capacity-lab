@@ -1,0 +1,17 @@
+{
+  "repo": "signal-sim-capacity-lab",
+  "thresholds": {
+    "signal": 2,
+    "slack": 1,
+    "confidence": 2,
+    "drag": 4,
+    "ship": 165,
+    "watch": 111
+  },
+  "terms": [
+    "input pressure",
+    "state drift",
+    "review cost",
+    "decision risk"
+  ]
+}
